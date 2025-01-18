@@ -1,4 +1,3 @@
-import 'reflect-metdata';
 import { Container } from 'inversify';
 import bindAllDepdencies from './bindings';
 

@@ -22,7 +22,7 @@ export const DetailsCard = () => {
 
     return (
         <div className="detailsCard">
-            <div style={{ borderBottom: 'solid #f5f5f5' }}>
+            <div style={{ borderBottom: 'solid #f5f5f5', marginTop: '5px' }}>
                 <img
                     src={productDetails.image}
                     alt="Image of a product for sale."

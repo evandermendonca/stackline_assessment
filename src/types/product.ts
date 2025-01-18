@@ -12,6 +12,7 @@ export type Product = {
     tags: Array<string>;
 };
 
-export type CompleteProduct = Product & { sales: Array<Sale>; reviews: Array<Review> }
-    
-}
+export type CompleteProduct = Product & {
+    sales: Array<Sale>;
+    reviews: Array<Review>;
+};

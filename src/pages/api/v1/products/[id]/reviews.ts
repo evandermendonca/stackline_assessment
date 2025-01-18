@@ -23,5 +23,5 @@ export default async function handler(
             .json({ message: 'Reviews not found for product.' });
     }
 
-    res.status(200).json(reviews);
+    return res.status(200).json(reviews);
 }

@@ -19,8 +19,7 @@ export class ReviewAdapter implements ReviewInterface {
             return undefined;
         }
 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const { sales, reviews, ...matchingProduct } = matchingCompleteProduct;
+        const { reviews } = matchingCompleteProduct;
 
         return reviews;
     }

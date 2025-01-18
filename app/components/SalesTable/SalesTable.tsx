@@ -23,16 +23,20 @@ export const SalesTable = () => {
         <div className="salesTable">
             <table
                 style={{
-                    width: '95%',
+                    borderCollapse: 'collapse',
                     margin: 'auto',
                     padding: '30px',
+                    width: '95%',
+                    marginTop: '20px',
                 }}
             >
                 <thead
                     style={{
+                        padding: '10px',
                         textAlign: 'left',
                         fontSize: '14px',
                         textTransform: 'uppercase',
+                        borderBottom: 'solid #f5f5f5 1px',
                     }}
                 >
                     <tr>
@@ -54,9 +58,8 @@ export const SalesTable = () => {
                         <tr
                             key={index}
                             style={{
-                                border: 'solid #f5f5f5',
-                                borderWidth: '1px',
-                                padding: '5px',
+                                borderBottom: 'solid #f5f5f5 1px',
+                                lineHeight: '3',
                             }}
                         >
                             <td>{sale.weekEnding}</td>

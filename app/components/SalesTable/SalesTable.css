@@ -1,0 +1,7 @@
+.salesTable {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    margin-left: 20px;
+    background: #ffffff;
+}

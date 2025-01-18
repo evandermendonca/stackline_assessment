@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import { NavBar } from './components/NavBar/NavBar';
 import { DetailsCard } from './components/DetailsCard/DetailsCard';
+import { SalesTable } from './components/SalesTable/SalesTable';
 
 export default function Home() {
     return (
@@ -8,15 +9,17 @@ export default function Home() {
             <NavBar />
             <div
                 style={{
-                    display: 'block',
+                    display: 'flex',
+                    flexDirection: 'row',
                     width: '95%',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '50px',
-                    color: '#000000'
+                    color: '#000000',
                 }}
             >
                 <DetailsCard />
+                <SalesTable />
             </div>
         </div>
     );

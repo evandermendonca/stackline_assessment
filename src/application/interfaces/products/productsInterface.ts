@@ -4,5 +4,5 @@ export const ProductInterface = Symbol('interfaces.product');
 
 export interface ProductInterface {
     getAllProducts(): Promise<Array<CompleteProduct>>;
-    getProductById(id: Product['id']): Promise<CompleteProduct | undefined>;
+    getProductById(id: Product['id']): Promise<Product | undefined>;
 }

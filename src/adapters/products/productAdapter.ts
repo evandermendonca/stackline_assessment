@@ -11,15 +11,20 @@ export class ProductAdapter implements ProductInterface {
         return data;
     }
 
-    async getProductById(
-        id: Product['id']
-    ): Promise<CompleteProduct | undefined> {
+    async getProductById(id: Product['id']): Promise<Product | undefined> {
         const { data } = getDatabaseContext('Stackline');
 
         const matchingCompleteProduct = data.find(
             (product) => product.id === id
         ) as CompleteProduct | undefined;
 
-        return matchingCompleteProduct;
+        if (!matchingCompleteProduct) {
+            return undefined;
+        }
+
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const { sales, reviews, ...matchingProduct } = matchingCompleteProduct;
+
+        return matchingProduct;
     }
 }

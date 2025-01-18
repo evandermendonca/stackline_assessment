@@ -1,11 +1,11 @@
 import container from '@/external/dependencies';
 import { GetProductById } from '@/application/useCases/products/getProductById';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import type { CompleteProduct } from '@/types/product';
+import type { Product } from '@/types/product';
 
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<CompleteProduct | { message: string } | undefined>
+    res: NextApiResponse<Product | { message: string } | undefined>
 ) {
     if (!req.query.id) {
         return res.status(404);

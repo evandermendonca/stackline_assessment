@@ -1,0 +1,7 @@
+.detailsCard {
+    display: block;
+    background: #fff;
+    height: 100vh; 
+    width: 250px;
+    border-radius: 5px;
+}
